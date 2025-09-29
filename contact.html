@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" type="text/css">
     <title> Contact Us </title>
 </head>
 <body>
     <header>
-        <p> Logo or Branding </p>
+        <p> TANITI </p>
         <nav>
             <a href="/index.html"> Home </a>
             <a href="/lodging.html"> Lodging </a>
@@ -19,10 +20,95 @@
     </header>
     <main>
         <h1> Contact Us </h1>
+        <form method="POST">
+            <label>
+                Name:
+                <p><input type="text" name="name" placeholder="Enter your name" required></p>
+            </label>
+            <br>
+            <label>
+                Email:
+                <p><input type="email" name="email" placeholder="Enter your email" required></p>
+            </label>
+            <br>
+            <label>
+                Message:
+                <p><textarea name="message" placeholder="Enter your message" required></textarea></p>
+            </label>
+            <br>
+            <button type="submit"> Send </button>
+        </form>
+        <br>
     </main>
     <footer>
         <p> Contact Information </p>
         <p> Social Media Links </p>
     </footer>
 </body>
+<style>
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #9C8B7E;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #555;
+    }
+
+    textarea {
+        height: 120px;
+        font-family: inherit;
+    }
+
+    button[type="submit"] {
+        background-color: #555;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16 px;
+        transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #9C8B7E;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #555;
+        outline: none;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    textarea::placeholder {
+        color: #999;
+    }
+</style>
 </html>
